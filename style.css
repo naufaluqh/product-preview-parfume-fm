@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 600px;
+  display: flex;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+  margin: 50px;
+  overflow: hidden;
+}
+
+.dekstop-pict {
+  width: 50%;
+  object-fit: cover;
+}
+
+.mobile-pict {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  width: 50%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: hsl(228, 12%, 48%);
+  margin: 10px 0;
+}
+
+.prize {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.real-prize {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.discount {
+  margin-left: 20px;
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  border-radius: 8px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+    max-width: 375px;
+    margin: 10px auto;
+  }
+
+  .dekstop-pict {
+    display: none;
+  }
+  .mobile-pict {
+    display: block;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 15px 0;
+  }
+
+  .prize {
+    margin: 15px 0;
+  }
+
+  .real-prize {
+    font-size: 28px;
+  }
+
+  .discount {
+    font-size: 13px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
